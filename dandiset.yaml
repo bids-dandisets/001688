@@ -39,16 +39,30 @@ assetsSummary:
   - BehavioralEvents
   - ElectrodeGroup
   - ProcessingModule
-citation: "O'Connell, Sean (2025) EMUsort Rat Datasets (Acquired): high-resolution
-  multichannel EMG recordings with 3D motion tracking during treadmill locomotion
-  (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001688/draft"
+citation: "O'Connell, Sean; Wang, Runming (2025) EMUsort Rat Datasets (Acquired):
+  high-resolution multichannel EMG recordings with 3D motion tracking during treadmill
+  locomotion (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001688/draft"
 contributor:
 - affiliation: []
-  email: sean_oc@emory.edu
+  email: smarkoco@proton.me
+  identifier: 0000-0002-2499-8595
   includeInCitation: true
   name: O'Connell, Sean
   roleName:
   - dcite:ContactPerson
+  - dcite:Author
+  - dcite:DataCollector
+  - dcite:DataCurator
+  - dcite:Supervision
+  schemaKey: Person
+- affiliation: []
+  email: rwang152@jh.edu
+  identifier: 0009-0007-8185-3505
+  includeInCitation: true
+  name: Wang, Runming
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
   schemaKey: Person
 dateCreated: '2025-12-19T20:55:15.940815+00:00'
 description: This Dandiset contains 3 high-resolution EMG recordings (16-channel bipolar)
@@ -97,7 +111,13 @@ manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/001688/versions/draft/assets/
 name: 'EMUsort Rat Datasets (Acquired): high-resolution multichannel EMG recordings
   with 3D motion tracking during treadmill locomotion'
-relatedResource: []
+relatedResource:
+- name: EMUsort
+  relation: dcite:IsSupplementTo
+  repository: EMUsort
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://github.com/snel-repo/EMUsort
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
