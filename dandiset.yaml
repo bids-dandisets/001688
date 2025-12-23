@@ -72,11 +72,12 @@ description: This Dandiset contains 3 high-resolution EMG recordings (16-channel
   was performed with Anipose and this Dandiset contains the 3D points outputted in
   the pose-3d folder, along with the confidence values. A small proportion of these
   values (outliers) were interpolated by the cubic spline method if they had a confidence
-  below 0.8 or if crossing an jump threshold of 6 pixels compared to a 7-frame median-filtered
-  history (i.e., score_threshold=0.8, medfilt=7, offset_threshold=6). No filtering
-  was performed on the 3D pose estimates. Along with these, this Dandiset also contains
-  labels for the initial contact and initial swing times for the forelimb palm of
-  the implanted side (left; i.e., palm_L).
+  below 0.8 or if crossing a jump threshold of 6 pixels compared to a 7-frame median-filtered
+  history (i.e., score_threshold=0.8, medfilt=7, offset_threshold=6, see Anipose documentation).
+  The interpolation of a time point is represented by a NaN value for the confidence
+  score of a given keypoint. No further filtering was performed on the 3D pose estimates.
+  Along with these, this Dandiset also contains labels for the initial contact and
+  initial swing times for the forelimb palm of the implanted side (left; i.e., palm_L).
 ethicsApproval: []
 id: DANDI:001688/draft
 identifier: DANDI:001688
