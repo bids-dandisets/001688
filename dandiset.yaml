@@ -64,6 +64,36 @@ contributor:
   - dcite:Author
   - dcite:DataCollector
   schemaKey: Person
+- awardNumber: R01NS109237
+  email: grantsinfo@nih.gov
+  name: National Institute of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://www.nih.gov/
+- awardNumber: U24NS126936
+  email: grantsinfo@nih.gov
+  name: National Institute of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://www.nih.gov/
+- awardNumber: Simons-Emory International Consortium on Motor Control
+  email: allgrants@simonsfoundation.org
+  identifier: https://ror.org/01cmst727
+  name: Simons Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://www.simonsfoundation.org/
+- awardNumber: Synergy II Nexus
+  email: SOMResearch@emory.edu
+  identifier: https://ror.org/03czfpz43
+  name: Emory School of Medicine
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://med.emory.edu/
 dateCreated: '2025-12-19T20:55:15.940815+00:00'
 description: This Dandiset contains 3 high-resolution EMG recordings (16-channel bipolar)
   from rat triceps brachii along with synchronized 3D motion tracking for 10 keypoints
@@ -78,7 +108,12 @@ description: This Dandiset contains 3 high-resolution EMG recordings (16-channel
   score of a given keypoint. No further filtering was performed on the 3D pose estimates.
   Along with these, this Dandiset also contains labels for the initial contact and
   initial swing times for the forelimb palm of the implanted side (left; i.e., palm_L).
-ethicsApproval: []
+ethicsApproval:
+- contactPoint:
+    email: iacuc@emory.edu
+    schemaKey: ContactPoint
+  identifier: '201700525'
+  schemaKey: EthicsApproval
 id: DANDI:001688/draft
 identifier: DANDI:001688
 keywords:
@@ -113,7 +148,9 @@ manifestLocation:
 name: 'EMUsort Rat Datasets (Acquired): high-resolution multichannel EMG recordings
   with 3D motion tracking during treadmill locomotion'
 relatedResource:
-- name: EMUsort
+- identifier: 
+    https://archive.softwareheritage.org/swh:1:rev:873b67a5c8d5035615ddf9d41cb26ea1508e6365;origin=https://github.com/snel-repo/EMUsort;visit=swh:1:snp:eadfee3f6f627e01915a8294f7a348c56d7be0b2
+  name: EMUsort
   relation: dcite:IsSupplementTo
   repository: EMUsort
   resourceType: dcite:Software
