@@ -1,0 +1,17 @@
+name	electrode_name	type	units	sampling_frequency	stream_id	gain
+CH1	e000	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH2	e001	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH3	e002	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH4	e003	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH5	e004	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH6	e005	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH7	e006	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH8	e007	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH9	e008	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH10	e009	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH11	e010	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH12	e011	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH13	e012	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH14	e013	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH15	e014	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
+CH16	e015	n/a	V	30000.0	ElectricalSeries	1.949999928474426e-07
