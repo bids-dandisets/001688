@@ -1,1 +1,0 @@
-{"sanitization_config":{"sub_labels":false,"ses_labels":false},"sanitization_file_path":"/data/dandi/bids-dandisets/work/001688/.nwb2bids/datetime-20260318143921_sanitization.txt","original_participant_id":"Godzilla","original_session_id":"20221116-9_godzilla_speed10_incline00","sanitized_participant_id":"Godzilla","sanitized_session_id":"20221116-9_godzilla_speed10_incline00"}
