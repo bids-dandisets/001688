@@ -1,2 +1,2 @@
-participant_id	species	sex
-sub-Godzilla	Rattus norvegicus	F
+participant_id	original_participant_id	species	sex
+sub-Godzilla	sub-Godzilla	Rattus norvegicus	F
