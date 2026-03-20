@@ -3,191 +3,191 @@
     "issues": [
       {
         "code": "UNKNOWN_BIDS_VERSION",
+        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.dataset.UnknownVersion",
-        "severity": "ignore"
+        "rule": "rules.checks.dataset.UnknownVersion"
       },
       {
         "code": "README_FILE_MISSING",
+        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.hints.ReadmeFileMissing",
-        "severity": "ignore"
+        "rule": "rules.checks.hints.ReadmeFileMissing"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "SourceDatasets",
+        "severity": "warning",
         "location": "/dataset_description.json",
-        "severity": "warning",
-        "rule": "rules.dataset_metadata.dataset_description",
-        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n"
+        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n",
+        "rule": "rules.dataset_metadata.dataset_description"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+5+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+5+godzilla+speed10+incline00_ecephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+5+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+5+godzilla+speed10+incline00_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "subCode": "x",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
-        "subCode": "x",
         "location": "/sub-Godzilla/ses-20221116+5+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+5+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+5+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+5+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "impedance",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+5+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+5+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+5+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+5+godzilla+speed10+incline00_channels.json",
-        "rule": "rules.tabular_data.microephys.microephysChannels",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysChannels"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "gain",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+5+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+5+godzilla+speed10+incline00_channels.json",
-        "rule": "rules.tabular_data.microephys.microephysChannels",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysChannels"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_channels.json",
-        "rule": "rules.tabular_data.microephys.microephysChannels",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysChannels"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "gain",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_channels.json",
-        "rule": "rules.tabular_data.microephys.microephysChannels",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysChannels"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "impedance",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-Godzilla/ses-20221116+8+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+8+godzilla+speed10+incline00_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+        "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_ecephys.nwb",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_ecephys.nwb",
         "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+        "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_ecephys.nwb",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "sampling_frequency",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_channels.json",
-        "rule": "rules.tabular_data.microephys.microephysChannels",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysChannels"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "gain",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_channels.json",
-        "rule": "rules.tabular_data.microephys.microephysChannels",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysChannels"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "issueMessage": "Format \"string\" must be number",
         "subCode": "impedance",
+        "severity": "warning",
         "location": "/sub-Godzilla/ses-20221116+9+godzilla+speed10+incline00/ecephys/sub-Godzilla_ses-20221116+9+godzilla+speed10+incline00_electrodes.json",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes",
-        "severity": "warning"
+        "issueMessage": "Format \"string\" must be number",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes"
       }
     ],
     "codeMessages": {
